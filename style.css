@@ -1,0 +1,85 @@
+/* Importación de fuentes*/
+
+@font-face {
+    font-family: Century;
+    src: url(./fonts/GOTHIC.TTF);
+}
+
+/* Variables de color */
+:root {
+    --oscuro: #1F2235;
+    --gris: #292C3E;
+    --blanco: #fff;
+    --rojo: #F14853;
+
+    --titulos: 40px;
+    --subtitulos: 30px;
+    --texto: 15px;
+
+    --transiciones: 0.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Century;
+}
+
+.container {
+    background-color: var(--gris);
+    width: 100%;
+    height: 100vh;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1{
+    font-size: var(--titulos);
+    font-weight: bold;
+}
+
+.cronometroBorde {
+    width: 200px;
+    height: 200px;
+    border: solid 2px var(--rojo);
+    border-radius: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 40px;
+}
+
+.contenedorBotones button {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border: none;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.contenedorBotones button:hover {
+    transform: scale(1.1);
+    transition: var(--transiciones);
+    border: solid 2px var(--blanco);
+    cursor: pointer;
+}
+
+.contenedorBotones button:active {
+    background-color: var(--blanco);
+    border: var(--oscuro);
+    color: var(--rojo);
+    transform: scale(1.5);
+    transition: var(--transiciones);
+}

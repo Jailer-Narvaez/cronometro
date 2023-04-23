@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cronómetro</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cronómetro</h1>
+        <div class="cronometroBorde">
+            <span id="horas">0</span>:<span id="decimaMinutos">0</span><span id="minutos">0</span>:<span id="decimaSegundos">0</span> <span id="segundos">0</span>
+        </div>
+        <div class="contenedorBotones">
+            <button onclick="mostrarContadorSegundos()">Iniciar</button>
+            <button onclick="botonDetener()">Detener</button>
+            <button onclick="reiniciar()">Reiniciar</button>
+        </div>
+    </div>
+
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>
